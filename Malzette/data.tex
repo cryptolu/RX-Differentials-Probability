@@ -1,0 +1,83 @@
+Table constants
+
+
+1 & \texttt{00000000}:\texttt{4e381c1c} & -2.19 & \texttt{1c71c924}:\texttt{249cad47} & -2.83 \\
+2 & \texttt{2aaaaaaa}:\texttt{36dbe492} & -2.19 & \texttt{49249c71}:\texttt{1249871c} & -1.83 \\
+3 & \texttt{7fffffff}:\texttt{1236db6c} & -1.83 & \texttt{6db6c71c}:\texttt{5b127ffe} & -3.19 \\
+4 & \texttt{55555555}:\texttt{0763638e} & -1.83 & \texttt{38e39249}:\texttt{152ad249} & -1.83 \\
+5 & \texttt{2aaaaaaa}:\texttt{1b6d4949} & -2.19 & \texttt{638e36db}:\texttt{649cad55} & -2.83 \\
+6 & \texttt{55555555}:\texttt{638ef1c7} & -1.83 & \texttt{1c71c7ff}:\texttt{471c9492} & -1.83 \\
+7 & \texttt{00000000}:\texttt{47638e39} & -2.19 & \texttt{36db6d55}:\texttt{63f1c71d} & -2.83 \\
+8 & \texttt{2aaaaaaa}:\texttt{5236b6db} & -2.19 & \texttt{471c7249}:\texttt{36a4ff1c} & -2.19 \\
+9 & \texttt{55555555}:\texttt{4e381c1c} & -1.83 & \texttt{4924938e}:\texttt{5b6c8e47} & -3.19 \\
+10 & \texttt{7fffffff}:\texttt{638eb1c7} & -2.19 & \texttt{2aab6db6}:\texttt{71c736db} & -1.83 \\
+11 & \texttt{7fffffff}:\texttt{47638e39} & -2.19 & \texttt{6db638e3}:\texttt{55b9c71d} & -2.83 \\
+12 & \texttt{3f2bb31e}:\texttt{b6c004cc} & -2.19 & \texttt{fb3d2330}:\texttt{b6da4b61} & -2.19 \\
+\bottomrule
+Total & & -24.86 & & -29.41 \\
+
+
+
+Table trails
+
+
+1 & \fontsize{8}{8}\texttt{7ffffff8}:\texttt{7ffffffc}:\texttt{fffffffc} & -2.19 & \fontsize{8}{8}\texttt{7fff0003}:\texttt{ffff8003}:\texttt{7fff8007} & -2.83 \\
+2 & \fontsize{8}{8}\texttt{fffffffc}:\texttt{7ffffffc}:\texttt{7ffffff8} & -2.19 & \fontsize{8}{8}\texttt{80000003}:\texttt{00000003}:\texttt{80000007} & -1.83 \\
+3 & \fontsize{8}{8}\texttt{00000003}:\texttt{80000003}:\texttt{80000007} & -1.83 & \fontsize{8}{8}\texttt{80007ffc}:\texttt{80007ffc}:\texttt{0000fff8} & -3.19 \\
+4 & \fontsize{8}{8}\texttt{00000003}:\texttt{80000003}:\texttt{80000007} & -1.83 & \fontsize{8}{8}\texttt{00000007}:\texttt{80000003}:\texttt{80000003} & -1.83 \\
+5 & \fontsize{8}{8}\texttt{7ffffff8}:\texttt{7ffffffc}:\texttt{fffffffc} & -2.19 & \fontsize{8}{8}\texttt{7fff0003}:\texttt{7fff8003}:\texttt{ffff8007} & -2.83 \\
+6 & \fontsize{8}{8}\texttt{80000007}:\texttt{80000003}:\texttt{00000003} & -1.83 & \fontsize{8}{8}\texttt{80000007}:\texttt{00000003}:\texttt{80000003} & -1.83 \\
+7 & \fontsize{8}{8}\texttt{fffffffc}:\texttt{7ffffffc}:\texttt{7ffffff8} & -2.19 & \fontsize{8}{8}\texttt{7ffff804}:\texttt{7ffff000}:\texttt{fffff804} & -2.83 \\
+8 & \fontsize{8}{8}\texttt{7ffffff8}:\texttt{7ffffffc}:\texttt{fffffffc} & -2.19 & \fontsize{8}{8}\texttt{7ffffff8}:\texttt{7ffffffc}:\texttt{fffffffc} & -2.19 \\
+9 & \fontsize{8}{8}\texttt{80000007}:\texttt{80000003}:\texttt{00000003} & -1.83 & \fontsize{8}{8}\texttt{80001fff}:\texttt{00000ffb}:\texttt{80000ffb} & -3.19 \\
+10 & \fontsize{8}{8}\texttt{fffffffc}:\texttt{7ffffffc}:\texttt{7ffffff8} & -2.19 & \fontsize{8}{8}\texttt{80000007}:\texttt{80000003}:\texttt{00000003} & -1.83 \\
+11 & \fontsize{8}{8}\texttt{fffffffc}:\texttt{7ffffffc}:\texttt{7ffffff8} & -2.19 & \fontsize{8}{8}\texttt{7ff00004}:\texttt{fff80000}:\texttt{7ff80004} & -2.83 \\
+12 & \fontsize{8}{8}\texttt{fffffffc}:\texttt{7ffffffc}:\texttt{7ffffff8} & -2.19 & \fontsize{8}{8}\texttt{7ffffffc}:\texttt{7ffffff8}:\texttt{fffffffc} & -2.19 \\
+\bottomrule
+Total & & -24.86 & & -29.41 \\
+
+
+
+consts_Malzette1 = [
+    (0x00000000, 0x4e381c1c),
+    (0x2aaaaaaa, 0x36dbe492),
+    (0x7fffffff, 0x1236db6c),
+    (0x55555555, 0x0763638e),
+    (0x2aaaaaaa, 0x1b6d4949),
+    (0x55555555, 0x638ef1c7),
+    (0x00000000, 0x47638e39),
+    (0x2aaaaaaa, 0x5236b6db),
+    (0x55555555, 0x4e381c1c),
+    (0x7fffffff, 0x638eb1c7),
+    (0x7fffffff, 0x47638e39),
+    (0x3f2bb31e, 0xb6c004cc),
+]
+
+consts_Malzette2 = [
+    (0x1c71c924, 0x249cad47),
+    (0x49249c71, 0x1249871c),
+    (0x6db6c71c, 0x5b127ffe),
+    (0x38e39249, 0x152ad249),
+    (0x638e36db, 0x649cad55),
+    (0x1c71c7ff, 0x471c9492),
+    (0x36db6d55, 0x63f1c71d),
+    (0x471c7249, 0x36a4ff1c),
+    (0x4924938e, 0x5b6c8e47),
+    (0x2aab6db6, 0x71c736db),
+    (0x6db638e3, 0x55b9c71d),
+    (0xfb3d2330, 0xb6da4b61),
+]
+
+differential_Malzette1 = [
+    (0x7ffffff8, 0x3ffffffe),
+    (0xb989d417, 0x0347a2a9),
+]
+differential_Malzette2 = [
+    (0x7fff0003, 0xffffc001),
+    (0xdd2bc54b, 0x078b106c),
+]
+
+7ffffff8:3ffffffe
+b989d417:0347a2a9
+7fff0003:ffffc001
+dd2bc54b:078b106c
