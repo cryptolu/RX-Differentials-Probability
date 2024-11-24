@@ -1,0 +1,912 @@
+=====================
+Const 0xb7e15162
+=====================
+Sat 09 Nov 2024 17:42:49 CET
+9-17:42 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xd823f3a7), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0xd823f3a7))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+/home/user/.local/lib/python3.12/site-packages/pysmt/oracles.py:71: UserWarning: Instance-based walkers (<=0.6.0) walkers are deprecated. You should use new-style/class based walkers
+  self.set_function(self.measure_to_fun[measure], *op.ALL_TYPES)
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xd823f3a7)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0xd823f3a7) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+9-17:42 | Solving for weight = 0
+9-17:42 | Solving for weight = 1
+9-17:42 | Solving for weight = 2
+9-17:42 | Solving for weight = 3
+9-17:42 | Solving for weight = 4
+9-17:42 | Solving for weight = 5
+9-17:42 | Solving for weight = 6
+9-17:42 | Solving for weight = 7
+9-17:42 | Solving for weight = 8
+9-17:42 | Solving for weight = 9
+9-17:42 | Solving for weight = 10
+9-17:42 | Solving for weight = 11
+9-17:42 | Solving for weight = 12
+9-17:42 | Solving for weight = 13
+2 : Ch(w=13.83, id=0007f000 0001f000, od=0803f219 032e9810) time 0.7840814590454102
+
+9-17:42 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xd823f3a7), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xd823f3a7), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0xd823f3a7))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xd823f3a7)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xd823f3a7)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0xd823f3a7) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+9-17:42 | Solving for weight = 13
+9-17:42 | Solving for weight = 14
+9-17:42 | Solving for weight = 15
+9-17:42 | Solving for weight = 16
+9-17:42 | Solving for weight = 17
+9-17:42 | Solving for weight = 18
+9-17:42 | Solving for weight = 19
+9-17:42 | Solving for weight = 20
+9-17:42 | Solving for weight = 21
+9-17:43 | Solving for weight = 22
+9-17:43 | Solving for weight = 23
+3 : Ch(w=23.25, id=0801f800 0400f800, od=58042da7 046c6a11) time 58.269837856292725
+
+9-17:43 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xd823f3a7), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xd823f3a7), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0xd823f3a7), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0xd823f3a7))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xd823f3a7)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xd823f3a7)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0xd823f3a7)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0xd823f3a7) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+9-17:43 | Solving for weight = 23
+Sat 09 Nov 2024 17:43:49 CET
+9-17:44 | Solving for weight = 24
+9-17:44 | Solving for weight = 25
+9-17:44 | Solving for weight = 26
+9-17:44 | Solving for weight = 27
+9-17:44 | Solving for weight = 28
+9-17:44 | Solving for weight = 29
+9-17:44 | Solving for weight = 30
+Sat 09 Nov 2024 17:44:49 CET
+9-17:45 | Solving for weight = 31
+Sat 09 Nov 2024 17:45:49 CET
+9-17:46 | Solving for weight = 32
+Sat 09 Nov 2024 17:46:49 CET
+Sat 09 Nov 2024 17:47:49 CET
+Sat 09 Nov 2024 17:48:49 CET
+Sat 09 Nov 2024 17:49:49 CET
+Sat 09 Nov 2024 17:50:49 CET
+Sat 09 Nov 2024 17:51:49 CET
+9-17:52 | Solving for weight = 33
+Sat 09 Nov 2024 17:52:49 CET
+Sat 09 Nov 2024 17:53:49 CET
+Sat 09 Nov 2024 17:54:49 CET
+Sat 09 Nov 2024 17:55:49 CET
+4 : Ch(w=33.66, id=0857f001 042df000, od=d803fc56 bff1003f) time 818.8936100006104
+Finished const 0xb7e15162
+
+=====================
+Const 0xbf715880
+=====================
+9-17:56 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xc193e981), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0xc193e981))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xc193e981)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0xc193e981) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+9-17:56 | Solving for weight = 0
+9-17:56 | Solving for weight = 1
+9-17:56 | Solving for weight = 2
+9-17:56 | Solving for weight = 3
+9-17:56 | Solving for weight = 4
+9-17:56 | Solving for weight = 5
+9-17:56 | Solving for weight = 6
+9-17:56 | Solving for weight = 7
+9-17:56 | Solving for weight = 8
+9-17:56 | Solving for weight = 9
+9-17:56 | Solving for weight = 10
+9-17:56 | Solving for weight = 11
+9-17:56 | Solving for weight = 12
+2 : Ch(w=12.83, id=81000384 80000082, od=c1020181 7401804b) time 0.575749397277832
+
+9-17:56 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xc193e981), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xc193e981), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0xc193e981))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xc193e981)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xc193e981)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0xc193e981) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+9-17:56 | Solving for weight = 12
+9-17:56 | Solving for weight = 13
+9-17:56 | Solving for weight = 14
+9-17:56 | Solving for weight = 15
+9-17:56 | Solving for weight = 16
+9-17:56 | Solving for weight = 17
+9-17:56 | Solving for weight = 18
+9-17:56 | Solving for weight = 19
+9-17:56 | Solving for weight = 20
+9-17:56 | Solving for weight = 21
+Sat 09 Nov 2024 17:56:49 CET
+3 : Ch(w=21.25, id=00910080 00000000, od=a243e181 a6601000) time 23.562101364135742
+
+9-17:56 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xc193e981), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xc193e981), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0xc193e981), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0xc193e981))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xc193e981)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xc193e981)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0xc193e981)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0xc193e981) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+9-17:56 | Solving for weight = 21
+9-17:57 | Solving for weight = 22
+9-17:57 | Solving for weight = 23
+9-17:57 | Solving for weight = 24
+9-17:57 | Solving for weight = 25
+9-17:57 | Solving for weight = 26
+9-17:57 | Solving for weight = 27
+9-17:57 | Solving for weight = 28
+Sat 09 Nov 2024 17:57:49 CET
+Sat 09 Nov 2024 17:58:49 CET
+9-17:59 | Solving for weight = 29
+Sat 09 Nov 2024 17:59:49 CET
+Sat 09 Nov 2024 18:00:49 CET
+Sat 09 Nov 2024 18:01:49 CET
+9-18:1 | Solving for weight = 30
+Sat 09 Nov 2024 18:02:49 CET
+Sat 09 Nov 2024 18:03:49 CET
+Sat 09 Nov 2024 18:04:49 CET
+Sat 09 Nov 2024 18:05:49 CET
+Sat 09 Nov 2024 18:06:49 CET
+Sat 09 Nov 2024 18:07:49 CET
+Sat 09 Nov 2024 18:08:49 CET
+9-18:9 | Solving for weight = 31
+Sat 09 Nov 2024 18:09:49 CET
+Sat 09 Nov 2024 18:10:49 CET
+4 : Ch(w=31.66, id=81910001 60008040, od=61840980 e120b317) time 896.666256904602
+Finished const 0xbf715880
+
+=====================
+Const 0x38b4da56
+=====================
+9-18:11 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x49dd6efa), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0x49dd6efa))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x49dd6efa)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0x49dd6efa) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+9-18:11 | Solving for weight = 0
+9-18:11 | Solving for weight = 1
+9-18:11 | Solving for weight = 2
+9-18:11 | Solving for weight = 3
+9-18:11 | Solving for weight = 4
+9-18:11 | Solving for weight = 5
+9-18:11 | Solving for weight = 6
+9-18:11 | Solving for weight = 7
+9-18:11 | Solving for weight = 8
+9-18:11 | Solving for weight = 9
+9-18:11 | Solving for weight = 10
+9-18:11 | Solving for weight = 11
+9-18:11 | Solving for weight = 12
+9-18:11 | Solving for weight = 13
+2 : Ch(w=13.83, id=fbfffefe fffffffe, od=7bfd7efe 08031915) time 0.637993574142456
+
+9-18:11 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x49dd6efa), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x49dd6efa), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0x49dd6efa))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x49dd6efa)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x49dd6efa)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0x49dd6efa) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+9-18:11 | Solving for weight = 13
+9-18:11 | Solving for weight = 14
+9-18:11 | Solving for weight = 15
+9-18:11 | Solving for weight = 16
+9-18:11 | Solving for weight = 17
+9-18:11 | Solving for weight = 18
+9-18:11 | Solving for weight = 19
+9-18:11 | Solving for weight = 20
+9-18:11 | Solving for weight = 21
+9-18:11 | Solving for weight = 22
+Sat 09 Nov 2024 18:11:49 CET
+9-18:12 | Solving for weight = 23
+Sat 09 Nov 2024 18:12:49 CET
+9-18:13 | Solving for weight = 24
+Sat 09 Nov 2024 18:13:49 CET
+3 : Ch(w=24.25, id=03d60000 00fb8000, od=291a7afa 21082c00) time 159.95885181427002
+
+9-18:14 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x49dd6efa), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x49dd6efa), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0x49dd6efa), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0x49dd6efa))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x49dd6efa)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x49dd6efa)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0x49dd6efa)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0x49dd6efa) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+9-18:14 | Solving for weight = 24
+9-18:14 | Solving for weight = 25
+9-18:14 | Solving for weight = 26
+9-18:14 | Solving for weight = 27
+Sat 09 Nov 2024 18:14:49 CET
+9-18:14 | Solving for weight = 28
+9-18:15 | Solving for weight = 29
+9-18:15 | Solving for weight = 30
+Sat 09 Nov 2024 18:15:49 CET
+9-18:16 | Solving for weight = 31
+Sat 09 Nov 2024 18:16:49 CET
+Sat 09 Nov 2024 18:17:49 CET
+9-18:18 | Solving for weight = 32
+Sat 09 Nov 2024 18:18:49 CET
+Sat 09 Nov 2024 18:19:49 CET
+Sat 09 Nov 2024 18:20:49 CET
+Sat 09 Nov 2024 18:21:49 CET
+Sat 09 Nov 2024 18:22:49 CET
+9-18:22 | Solving for weight = 33
+Sat 09 Nov 2024 18:23:49 CET
+Sat 09 Nov 2024 18:24:49 CET
+Sat 09 Nov 2024 18:25:49 CET
+Sat 09 Nov 2024 18:26:49 CET
+Sat 09 Nov 2024 18:27:49 CET
+Sat 09 Nov 2024 18:28:49 CET
+Sat 09 Nov 2024 18:29:49 CET
+9-18:30 | Solving for weight = 34
+Sat 09 Nov 2024 18:30:49 CET
+Sat 09 Nov 2024 18:31:49 CET
+Sat 09 Nov 2024 18:32:49 CET
+Sat 09 Nov 2024 18:33:49 CET
+Sat 09 Nov 2024 18:34:49 CET
+Sat 09 Nov 2024 18:35:49 CET
+Sat 09 Nov 2024 18:36:49 CET
+Sat 09 Nov 2024 18:37:49 CET
+Sat 09 Nov 2024 18:38:49 CET
+Sat 09 Nov 2024 18:39:49 CET
+Sat 09 Nov 2024 18:40:49 CET
+Sat 09 Nov 2024 18:41:49 CET
+Sat 09 Nov 2024 18:42:49 CET
+Sat 09 Nov 2024 18:47:49 CET
+Sat 09 Nov 2024 18:52:49 CET
+Sat 09 Nov 2024 18:57:49 CET
+Sat 09 Nov 2024 19:02:49 CET
+9-19:6 | Solving for weight = 35
+Sat 09 Nov 2024 19:07:49 CET
+Sat 09 Nov 2024 19:12:49 CET
+Sat 09 Nov 2024 19:17:49 CET
+Sat 09 Nov 2024 19:22:49 CET
+Sat 09 Nov 2024 19:27:49 CET
+Sat 09 Nov 2024 19:32:49 CET
+Sat 09 Nov 2024 19:37:49 CET
+Sat 09 Nov 2024 19:42:49 CET
+Sat 09 Nov 2024 19:47:49 CET
+Sat 09 Nov 2024 19:52:49 CET
+Sat 09 Nov 2024 19:57:49 CET
+Sat 09 Nov 2024 20:02:49 CET
+Sat 09 Nov 2024 20:07:49 CET
+Sat 09 Nov 2024 20:12:49 CET
+Sat 09 Nov 2024 20:17:49 CET
+Sat 09 Nov 2024 20:22:49 CET
+Sat 09 Nov 2024 20:27:49 CET
+Sat 09 Nov 2024 20:32:49 CET
+Sat 09 Nov 2024 20:37:49 CET
+Sat 09 Nov 2024 20:42:49 CET
+Sat 09 Nov 2024 20:47:49 CET
+Sat 09 Nov 2024 20:52:49 CET
+Sat 09 Nov 2024 20:57:49 CET
+Sat 09 Nov 2024 21:02:49 CET
+Sat 09 Nov 2024 21:07:49 CET
+Sat 09 Nov 2024 21:12:49 CET
+Sat 09 Nov 2024 21:17:49 CET
+9-21:20 | Solving for weight = 36
+Sat 09 Nov 2024 21:22:49 CET
+Sat 09 Nov 2024 21:27:49 CET
+Sat 09 Nov 2024 21:32:49 CET
+Sat 09 Nov 2024 21:37:49 CET
+Sat 09 Nov 2024 21:42:49 CET
+Sat 09 Nov 2024 21:47:49 CET
+Sat 09 Nov 2024 21:52:49 CET
+Sat 09 Nov 2024 21:57:49 CET
+Sat 09 Nov 2024 22:02:49 CET
+Sat 09 Nov 2024 22:07:49 CET
+Sat 09 Nov 2024 22:12:49 CET
+Sat 09 Nov 2024 22:17:49 CET
+Sat 09 Nov 2024 22:22:49 CET
+Sat 09 Nov 2024 22:27:49 CET
+Sat 09 Nov 2024 22:32:49 CET
+Sat 09 Nov 2024 22:37:49 CET
+Sat 09 Nov 2024 22:42:49 CET
+Sat 09 Nov 2024 23:42:49 CET
+Sun 10 Nov 2024 00:42:49 CET
+Sun 10 Nov 2024 01:42:49 CET
+Sun 10 Nov 2024 02:42:49 CET
+Sun 10 Nov 2024 03:42:49 CET
+Sun 10 Nov 2024 04:42:49 CET
+Sun 10 Nov 2024 05:42:49 CET
+Sun 10 Nov 2024 06:42:49 CET
+Sun 10 Nov 2024 07:42:49 CET
+Sun 10 Nov 2024 08:42:49 CET
+Sun 10 Nov 2024 09:42:49 CET
+10-10:36 | Solving for weight = 37
+Sun 10 Nov 2024 10:42:49 CET
+4 : Ch(w=37.66, id=00efe029 8077f800, od=49ff690b e6f00024) time 60043.8521463871
+Finished const 0x38b4da56
+
+=====================
+Const 0x324e7738
+=====================
+10-10:52 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x56d29948), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0x56d29948))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x56d29948)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0x56d29948) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+10-10:52 | Solving for weight = 0
+10-10:52 | Solving for weight = 1
+10-10:52 | Solving for weight = 2
+10-10:52 | Solving for weight = 3
+10-10:52 | Solving for weight = 4
+10-10:52 | Solving for weight = 5
+10-10:52 | Solving for weight = 6
+10-10:52 | Solving for weight = 7
+10-10:52 | Solving for weight = 8
+10-10:52 | Solving for weight = 9
+10-10:52 | Solving for weight = 10
+10-10:52 | Solving for weight = 11
+10-10:52 | Solving for weight = 12
+10-10:52 | Solving for weight = 13
+10-10:52 | Solving for weight = 14
+10-10:52 | Solving for weight = 15
+2 : Ch(w=15.83, id=60028008 30080400, od=d9329948 22804a30) time 0.7996647357940674
+
+10-10:52 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x56d29948), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x56d29948), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0x56d29948))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x56d29948)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x56d29948)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0x56d29948) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+10-10:52 | Solving for weight = 15
+10-10:52 | Solving for weight = 16
+10-10:52 | Solving for weight = 17
+10-10:52 | Solving for weight = 18
+10-10:52 | Solving for weight = 19
+10-10:52 | Solving for weight = 20
+10-10:52 | Solving for weight = 21
+10-10:52 | Solving for weight = 22
+10-10:52 | Solving for weight = 23
+10-10:52 | Solving for weight = 24
+10-10:52 | Solving for weight = 25
+3 : Ch(w=25.25, id=0000c409 0000e600, od=d2d21969 0401002a) time 78.99752020835876
+
+10-10:53 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x56d29948), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x56d29948), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0x56d29948), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0x56d29948))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x56d29948)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x56d29948)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0x56d29948)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0x56d29948) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+10-10:53 | Solving for weight = 25
+10-10:53 | Solving for weight = 26
+10-10:54 | Solving for weight = 27
+10-10:54 | Solving for weight = 28
+10-10:54 | Solving for weight = 29
+10-10:54 | Solving for weight = 30
+10-10:54 | Solving for weight = 31
+10-10:54 | Solving for weight = 32
+10-10:54 | Solving for weight = 33
+10-10:55 | Solving for weight = 34
+10-10:56 | Solving for weight = 35
+10-11:0 | Solving for weight = 36
+10-11:18 | Solving for weight = 37
+Sun 10 Nov 2024 11:42:49 CET
+Sun 10 Nov 2024 12:42:49 CET
+10-12:51 | Solving for weight = 38
+4 : Ch(w=38.66, id=af10103d 93c00806, od=56d29129 28200210) time 7495.778832197189
+Finished const 0x324e7738
+
+=====================
+Const 0xbb1185eb
+=====================
+10-12:57 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xcd328e3c), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0xcd328e3c))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xcd328e3c)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0xcd328e3c) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+10-12:57 | Solving for weight = 0
+10-12:57 | Solving for weight = 1
+10-12:57 | Solving for weight = 2
+10-12:57 | Solving for weight = 3
+10-12:57 | Solving for weight = 4
+10-12:57 | Solving for weight = 5
+10-12:57 | Solving for weight = 6
+10-12:57 | Solving for weight = 7
+10-12:57 | Solving for weight = 8
+10-12:57 | Solving for weight = 9
+10-12:57 | Solving for weight = 10
+10-12:57 | Solving for weight = 11
+10-12:57 | Solving for weight = 12
+10-12:57 | Solving for weight = 13
+10-12:57 | Solving for weight = 14
+2 : Ch(w=14.83, id=7edffc00 3fc7ff00, od=fecf7624 0c35e600) time 0.43494319915771484
+
+10-12:57 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xcd328e3c), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xcd328e3c), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0xcd328e3c))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xcd328e3c)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xcd328e3c)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0xcd328e3c) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+10-12:57 | Solving for weight = 14
+10-12:57 | Solving for weight = 15
+10-12:57 | Solving for weight = 16
+10-12:57 | Solving for weight = 17
+10-12:57 | Solving for weight = 18
+10-12:57 | Solving for weight = 19
+10-12:57 | Solving for weight = 20
+10-12:57 | Solving for weight = 21
+10-12:57 | Solving for weight = 22
+10-12:57 | Solving for weight = 23
+10-12:57 | Solving for weight = 24
+10-12:58 | Solving for weight = 25
+3 : Ch(w=25.25, id=61300780 303003c1, od=cc528a1c 42f00e41) time 86.49133491516113
+
+10-12:58 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xcd328e3c), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xcd328e3c), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0xcd328e3c), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0xcd328e3c))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xcd328e3c)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xcd328e3c)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0xcd328e3c)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0xcd328e3c) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+10-12:58 | Solving for weight = 25
+10-12:58 | Solving for weight = 26
+10-12:58 | Solving for weight = 27
+10-12:58 | Solving for weight = 28
+10-12:58 | Solving for weight = 29
+10-12:58 | Solving for weight = 30
+10-12:58 | Solving for weight = 31
+10-12:58 | Solving for weight = 32
+10-12:59 | Solving for weight = 33
+10-13:0 | Solving for weight = 34
+10-13:8 | Solving for weight = 35
+4 : Ch(w=35.66, id=7800887d 3800441c, od=b932083d 83657404) time 1089.7893624305725
+Finished const 0xbb1185eb
+
+=====================
+Const 0x4f7c7b57
+=====================
+10-13:15 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xd1848df9), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0xd1848df9))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xd1848df9)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0xd1848df9) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+10-13:15 | Solving for weight = 0
+10-13:15 | Solving for weight = 1
+10-13:15 | Solving for weight = 2
+10-13:15 | Solving for weight = 3
+10-13:15 | Solving for weight = 4
+10-13:15 | Solving for weight = 5
+10-13:15 | Solving for weight = 6
+10-13:15 | Solving for weight = 7
+10-13:15 | Solving for weight = 8
+10-13:15 | Solving for weight = 9
+10-13:15 | Solving for weight = 10
+10-13:15 | Solving for weight = 11
+10-13:15 | Solving for weight = 12
+2 : Ch(w=12.83, id=01c00000 81e00000, od=81808901 039c2803) time 0.41243600845336914
+
+10-13:15 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xd1848df9), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xd1848df9), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0xd1848df9))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xd1848df9)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xd1848df9)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0xd1848df9) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+10-13:15 | Solving for weight = 12
+10-13:15 | Solving for weight = 13
+10-13:15 | Solving for weight = 14
+10-13:15 | Solving for weight = 15
+10-13:15 | Solving for weight = 16
+10-13:15 | Solving for weight = 17
+10-13:15 | Solving for weight = 18
+10-13:15 | Solving for weight = 19
+10-13:15 | Solving for weight = 20
+10-13:15 | Solving for weight = 21
+10-13:15 | Solving for weight = 22
+3 : Ch(w=22.25, id=7efbf802 bc3ffe01, od=aebf61f9 81483000) time 34.84315824508667
+
+10-13:15 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0xd1848df9), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0xd1848df9), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0xd1848df9), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0xd1848df9))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0xd1848df9)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0xd1848df9)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0xd1848df9)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0xd1848df9) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+10-13:15 | Solving for weight = 22
+10-13:15 | Solving for weight = 23
+10-13:15 | Solving for weight = 24
+10-13:15 | Solving for weight = 25
+10-13:15 | Solving for weight = 26
+10-13:16 | Solving for weight = 27
+10-13:16 | Solving for weight = 28
+10-13:16 | Solving for weight = 29
+10-13:16 | Solving for weight = 30
+10-13:18 | Solving for weight = 31
+10-13:22 | Solving for weight = 32
+4 : Ch(w=32.66, id=810e8ff9 0c8f0ff8, od=09848ff8 0208d800) time 549.1309888362885
+Finished const 0x4f7c7b57
+
+=====================
+Const 0xcfbfa1c8
+=====================
+10-13:24 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x50c0e259), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0x50c0e259))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x50c0e259)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0x50c0e259) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+10-13:24 | Solving for weight = 0
+10-13:24 | Solving for weight = 1
+10-13:24 | Solving for weight = 2
+10-13:24 | Solving for weight = 3
+10-13:24 | Solving for weight = 4
+10-13:24 | Solving for weight = 5
+10-13:24 | Solving for weight = 6
+10-13:24 | Solving for weight = 7
+10-13:24 | Solving for weight = 8
+10-13:24 | Solving for weight = 9
+10-13:24 | Solving for weight = 10
+10-13:24 | Solving for weight = 11
+10-13:24 | Solving for weight = 12
+2 : Ch(w=12.83, id=00800200 40000000, od=00c0a211 e0262880) time 0.41621875762939453
+
+10-13:24 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x50c0e259), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x50c0e259), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0x50c0e259))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x50c0e259)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x50c0e259)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0x50c0e259) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+10-13:24 | Solving for weight = 12
+10-13:24 | Solving for weight = 13
+10-13:24 | Solving for weight = 14
+10-13:24 | Solving for weight = 15
+10-13:24 | Solving for weight = 16
+10-13:24 | Solving for weight = 17
+10-13:24 | Solving for weight = 18
+10-13:24 | Solving for weight = 19
+10-13:24 | Solving for weight = 20
+10-13:24 | Solving for weight = 21
+10-13:24 | Solving for weight = 22
+3 : Ch(w=22.25, id=8041e000 c001e000, od=c1430259 a3ca0001) time 17.681407928466797
+
+10-13:24 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x50c0e259), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x50c0e259), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0x50c0e259), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0x50c0e259))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x50c0e259)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x50c0e259)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0x50c0e259)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0x50c0e259) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+10-13:24 | Solving for weight = 22
+10-13:24 | Solving for weight = 23
+10-13:24 | Solving for weight = 24
+10-13:24 | Solving for weight = 25
+10-13:24 | Solving for weight = 26
+10-13:24 | Solving for weight = 27
+10-13:24 | Solving for weight = 28
+10-13:25 | Solving for weight = 29
+10-13:25 | Solving for weight = 30
+4 : Ch(w=30.66, id=8000f009 c061f800, od=10c05078 922140b0) time 119.24278235435486
+Finished const 0xcfbfa1c8
+
+=====================
+Const 0xc2b3293d
+=====================
+10-13:26 | Current number of rounds: 2
+Characteristic model: ChModel(func=Alzette_2R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx9_out), RXDiff(dx8_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x47d57b46), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx9_out), RXModelId(RXDiff(dx6 ^ 0x47d57b46))), (RXDiff(dx8_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))))])
+Size of the base SMT problem: 1631
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x47d57b46)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx6 ^ 0x47d57b46) == dx9_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17)) == dx8_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == 0b0
+assert w3 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1))[:3])
+10-13:26 | Solving for weight = 0
+10-13:26 | Solving for weight = 1
+10-13:26 | Solving for weight = 2
+10-13:26 | Solving for weight = 3
+10-13:26 | Solving for weight = 4
+10-13:26 | Solving for weight = 5
+10-13:26 | Solving for weight = 6
+10-13:26 | Solving for weight = 7
+10-13:26 | Solving for weight = 8
+10-13:26 | Solving for weight = 9
+10-13:26 | Solving for weight = 10
+10-13:26 | Solving for weight = 11
+10-13:26 | Solving for weight = 12
+10-13:26 | Solving for weight = 13
+10-13:26 | Solving for weight = 14
+2 : Ch(w=14.83, id=fffffff2 fffffffa, od=dbfd7fc6 02407611) time 0.6453762054443359
+
+10-13:26 | Current number of rounds: 3
+Characteristic model: ChModel(func=Alzette_3R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx13_out), RXDiff(dx12_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x47d57b46), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x47d57b46), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx13_out), RXModelId(RXDiff(dx10 ^ 0x47d57b46))), (RXDiff(dx12_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31))))])
+Size of the base SMT problem: 2601
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x47d57b46)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x47d57b46)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx10 ^ 0x47d57b46) == dx13_out
+assert (dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) == dx12_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == 0b0
+assert w4 == 0b0
+assert w == (((0b0 :: w0) + (0b0 :: w1) + (0b0 :: w2))[:3])
+10-13:26 | Solving for weight = 14
+10-13:26 | Solving for weight = 15
+10-13:26 | Solving for weight = 16
+10-13:26 | Solving for weight = 17
+10-13:26 | Solving for weight = 18
+10-13:26 | Solving for weight = 19
+10-13:26 | Solving for weight = 20
+10-13:26 | Solving for weight = 21
+10-13:26 | Solving for weight = 22
+10-13:26 | Solving for weight = 23
+10-13:27 | Solving for weight = 24
+10-13:28 | Solving for weight = 25
+3 : Ch(w=25.25, id=4ffc0000 03fc0000, od=45ab7b06 46a200c3) time 154.8650767803192
+
+10-13:28 | Current number of rounds: 4
+Characteristic model: ChModel(func=Alzette_4R, input_diff=[RXDiff(dp0), RXDiff(dp1)], output_diff=[RXDiff(dx18_out), RXDiff(dx17_out)], assign_outdiff2op_model=[(RXDiff(dx1), RXModelBvAdd([RXDiff(dp0), RXDiff(dp1 >>> 31)])), (RXDiff(dx6), RXModelBvAdd([RXDiff(dx1 ^ 0x47d57b46), RXDiff((dp1 ^ (dx1 >>> 24)) >>> 17)])), (RXDiff(dx10), RXModelBvAdd([RXDiff(dx6 ^ 0x47d57b46), RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17))])), (RXDiff(dx15), RXModelBvAdd([RXDiff(dx10 ^ 0x47d57b46), RXDiff((dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31)) >>> 24)])), (RXDiff(dx18_out), RXModelId(RXDiff(dx15 ^ 0x47d57b46))), (RXDiff(dx17_out), RXModelId(RXDiff(dp1 ^ (dx1 >>> 24) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16))))])
+Size of the base SMT problem: 3714
+Base SMT problem:
+; characteristic model assertions
+assert (~((... ^ ... ^ (dx1[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | ((((dp0[:1]) ^ (dx1[:1])) | (((dp1 >>> 31)[:1]) ^ (dx1[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx6[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx1 ^ 0x47d57b46)[:1]) ^ (dx6[:1])) | ((((... ^ ...) >>> 17)[:1]) ^ (dx6[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx10[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx6 ^ 0x47d57b46)[:1]) ^ (dx10[:1])) | (((... ^ ... ^ (... >>> ...))[:1]) ^ (dx10[:1])))[29:])) == 0b111111111111111111111111111111
+assert (~((... ^ ... ^ (dx15[:1]) ^ ((... ^ ...) << 0b0000000000000000000000000000001))[:1]) | (((((dx10 ^ 0x47d57b46)[:1]) ^ (dx15[:1])) | ((((... ^ ...) >>> 24)[:1]) ^ (dx15[:1])))[29:])) == 0b111111111111111111111111111111
+assert (dx15 ^ 0x47d57b46) == dx18_out
+assert (dp1 ^ (... >>> ...) ^ (dx6 >>> 17) ^ (dx10 >>> 31) ^ (dx15 >>> 16)) == dx17_out
+assert w0 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx1[1])), 0b000001011, 0b000011000)))
+assert w1 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx6[1])), 0b000001011, 0b000011000)))
+assert w2 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx10[1])), 0b000001011, 0b000011000)))
+assert w3 == (((0x0 :: PopCount((... | ...)[29:])) << 0b000000011) + (Ite(~(... ^ ... ^ (dx15[1])), 0b000001011, 0b000011000)))
+assert w4 == 0b0
+assert w5 == 0b0
+assert w == (((0b00 :: w0) + (0b00 :: w1) + (0b00 :: w2) + (0b00 :: w3))[:3])
+10-13:28 | Solving for weight = 25
+10-13:29 | Solving for weight = 26
+10-13:29 | Solving for weight = 27
+10-13:29 | Solving for weight = 28
+10-13:29 | Solving for weight = 29
+10-13:29 | Solving for weight = 30
+10-13:29 | Solving for weight = 31
+10-13:30 | Solving for weight = 32
+10-13:31 | Solving for weight = 33
+10-13:33 | Solving for weight = 34
+Sun 10 Nov 2024 13:42:49 CET
+10-13:43 | Solving for weight = 35
+10-14:34 | Solving for weight = 36
+Sun 10 Nov 2024 14:42:49 CET
+Sun 10 Nov 2024 15:42:49 CET
+Sun 10 Nov 2024 16:42:49 CET
+10-17:30 | Solving for weight = 37
+Sun 10 Nov 2024 17:42:49 CET
+4 : Ch(w=37.66, id=9dd8ac07 d6f81600, od=47d17c87 87810107) time 16845.45538687706
+Finished const 0xc2b3293d
+All work done!
+Sun 10 Nov 2024 18:42:49 CET
+Sun 10 Nov 2024 19:42:49 CET
+Sun 10 Nov 2024 20:42:49 CET
+Sun 10 Nov 2024 21:42:49 CET
+Sun 10 Nov 2024 22:42:49 CET
+Sun 10 Nov 2024 23:42:49 CET
+Mon 11 Nov 2024 00:42:49 CET
+Mon 11 Nov 2024 01:42:49 CET
+Mon 11 Nov 2024 02:42:49 CET
+Mon 11 Nov 2024 03:42:49 CET
+Mon 11 Nov 2024 04:42:49 CET
+Mon 11 Nov 2024 05:42:49 CET
+Mon 11 Nov 2024 06:42:49 CET
+Mon 11 Nov 2024 07:42:49 CET
+Mon 11 Nov 2024 08:42:49 CET
+Mon 11 Nov 2024 09:42:49 CET
+Mon 11 Nov 2024 10:42:49 CET
+Mon 11 Nov 2024 11:42:49 CET
+Mon 11 Nov 2024 12:42:49 CET
+Mon 11 Nov 2024 13:42:49 CET
+Mon 11 Nov 2024 14:42:49 CET
