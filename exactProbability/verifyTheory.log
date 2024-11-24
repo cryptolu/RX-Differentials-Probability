@@ -1,0 +1,262 @@
+Verifying validity criteria and main theorem exhaustively for n <= 8
+verifyRXDP_exhaustive n=2 k=1 finished successfully!
+verifyRXDP_exhaustive n=3 k=1 finished successfully!
+verifyRXDP_exhaustive n=3 k=2 finished successfully!
+verifyRXDP_exhaustive n=4 k=1 finished successfully!
+verifyRXDP_exhaustive n=4 k=2 finished successfully!
+verifyRXDP_exhaustive n=4 k=3 finished successfully!
+verifyRXDP_exhaustive n=5 k=1 finished successfully!
+verifyRXDP_exhaustive n=5 k=2 finished successfully!
+verifyRXDP_exhaustive n=5 k=3 finished successfully!
+verifyRXDP_exhaustive n=5 k=4 finished successfully!
+verifyRXDP_exhaustive n=6 k=1 finished successfully!
+verifyRXDP_exhaustive n=6 k=2 finished successfully!
+verifyRXDP_exhaustive n=6 k=3 finished successfully!
+verifyRXDP_exhaustive n=6 k=4 finished successfully!
+verifyRXDP_exhaustive n=6 k=5 finished successfully!
+verifyRXDP_exhaustive n=7 k=1 finished successfully!
+verifyRXDP_exhaustive n=7 k=2 finished successfully!
+verifyRXDP_exhaustive n=7 k=3 finished successfully!
+verifyRXDP_exhaustive n=7 k=4 finished successfully!
+verifyRXDP_exhaustive n=7 k=5 finished successfully!
+verifyRXDP_exhaustive n=7 k=6 finished successfully!
+verifyRXDP_exhaustive n=8 k=1 finished successfully!
+verifyRXDP_exhaustive n=8 k=2 finished successfully!
+verifyRXDP_exhaustive n=8 k=3 finished successfully!
+verifyRXDP_exhaustive n=8 k=4 finished successfully!
+verifyRXDP_exhaustive n=8 k=5 finished successfully!
+verifyRXDP_exhaustive n=8 k=6 finished successfully!
+verifyRXDP_exhaustive n=8 k=7 finished successfully!
+
+Verifying validity criteria and main theorem for random 50 input differences for n <= 12
+verifyRXDP_random n=2 k=1 count=100 finished successfully!
+verifyRXDP_random n=3 k=1 count=100 finished successfully!
+verifyRXDP_random n=3 k=2 count=100 finished successfully!
+verifyRXDP_random n=4 k=2 count=100 finished successfully!
+verifyRXDP_random n=4 k=3 count=100 finished successfully!
+verifyRXDP_random n=4 k=1 count=100 finished successfully!
+verifyRXDP_random n=5 k=2 count=100 finished successfully!
+verifyRXDP_random n=5 k=3 count=100 finished successfully!
+verifyRXDP_random n=5 k=1 count=100 finished successfully!
+verifyRXDP_random n=5 k=4 count=100 finished successfully!
+verifyRXDP_random n=6 k=5 count=100 finished successfully!
+verifyRXDP_random n=6 k=2 count=100 finished successfully!
+verifyRXDP_random n=6 k=1 count=100 finished successfully!
+verifyRXDP_random n=6 k=3 count=100 finished successfully!
+verifyRXDP_random n=6 k=4 count=100 finished successfully!
+verifyRXDP_random n=7 k=1 count=100 finished successfully!
+verifyRXDP_random n=7 k=3 count=100 finished successfully!
+verifyRXDP_random n=7 k=6 count=100 finished successfully!
+verifyRXDP_random n=7 k=2 count=100 finished successfully!
+verifyRXDP_random n=7 k=5 count=100 finished successfully!
+verifyRXDP_random n=7 k=4 count=100 finished successfully!
+verifyRXDP_random n=8 k=5 count=100 finished successfully!
+verifyRXDP_random n=8 k=6 count=100 finished successfully!
+verifyRXDP_random n=8 k=1 count=100 finished successfully!
+verifyRXDP_random n=8 k=3 count=100 finished successfully!
+verifyRXDP_random n=8 k=7 count=100 finished successfully!
+verifyRXDP_random n=8 k=4 count=100 finished successfully!
+verifyRXDP_random n=8 k=2 count=100 finished successfully!
+verifyRXDP_random n=9 k=2 count=100 finished successfully!
+verifyRXDP_random n=9 k=1 count=100 finished successfully!
+verifyRXDP_random n=9 k=4 count=100 finished successfully!
+verifyRXDP_random n=9 k=3 count=100 finished successfully!
+verifyRXDP_random n=9 k=6 count=100 finished successfully!
+verifyRXDP_random n=9 k=7 count=100 finished successfully!
+verifyRXDP_random n=9 k=8 count=100 finished successfully!
+verifyRXDP_random n=9 k=5 count=100 finished successfully!
+verifyRXDP_random n=10 k=4 count=100 finished successfully!
+verifyRXDP_random n=10 k=3 count=100 finished successfully!
+verifyRXDP_random n=10 k=1 count=100 finished successfully!
+verifyRXDP_random n=10 k=9 count=100 finished successfully!
+verifyRXDP_random n=10 k=7 count=100 finished successfully!
+verifyRXDP_random n=10 k=8 count=100 finished successfully!
+verifyRXDP_random n=10 k=5 count=100 finished successfully!
+verifyRXDP_random n=10 k=6 count=100 finished successfully!
+verifyRXDP_random n=10 k=2 count=100 finished successfully!
+verifyRXDP_random n=11 k=6 count=100 finished successfully!
+verifyRXDP_random n=11 k=9 count=100 finished successfully!
+verifyRXDP_random n=11 k=10 count=100 finished successfully!
+verifyRXDP_random n=11 k=5 count=100 finished successfully!
+verifyRXDP_random n=11 k=3 count=100 finished successfully!
+verifyRXDP_random n=11 k=1 count=100 finished successfully!
+verifyRXDP_random n=11 k=7 count=100 finished successfully!
+verifyRXDP_random n=11 k=8 count=100 finished successfully!
+verifyRXDP_random n=11 k=4 count=100 finished successfully!
+verifyRXDP_random n=11 k=2 count=100 finished successfully!
+verifyRXDP_random n=12 k=1 count=100 finished successfully!
+verifyRXDP_random n=12 k=10 count=100 finished successfully!
+verifyRXDP_random n=12 k=3 count=100 finished successfully!
+verifyRXDP_random n=12 k=7 count=100 finished successfully!
+verifyRXDP_random n=12 k=9 count=100 finished successfully!
+verifyRXDP_random n=12 k=11 count=100 finished successfully!
+verifyRXDP_random n=12 k=8 count=100 finished successfully!
+verifyRXDP_random n=12 k=5 count=100 finished successfully!
+verifyRXDP_random n=12 k=2 count=100 finished successfully!
+verifyRXDP_random n=12 k=4 count=100 finished successfully!
+verifyRXDP_random n=12 k=6 count=100 finished successfully!
+
+Verifying XDS/Rn/Tn formulas exhaustively for n <= 8
+verifyDiff_exhaustive n=2 finished successfully!
+verifyDiff_exhaustive n=3 finished successfully!
+verifyDiff_exhaustive n=4 finished successfully!
+verifyDiff_exhaustive n=5 finished successfully!
+verifyDiff_exhaustive n=6 finished successfully!
+verifyDiff_exhaustive n=7 finished successfully!
+verifyDiff_exhaustive n=8 finished successfully!
+
+Verifying XDS/Rn/Tn formulas for random 1000 input differences for n <= 12
+verifyDiff_random n=2 count=100 finished successfully!
+verifyDiff_random n=3 count=100 finished successfully!
+verifyDiff_random n=4 count=100 finished successfully!
+verifyDiff_random n=5 count=100 finished successfully!
+verifyDiff_random n=6 count=100 finished successfully!
+verifyDiff_random n=7 count=100 finished successfully!
+verifyDiff_random n=8 count=100 finished successfully!
+verifyDiff_random n=9 count=100 finished successfully!
+verifyDiff_random n=10 count=100 finished successfully!
+verifyDiff_random n=11 count=100 finished successfully!
+verifyDiff_random n=12 count=100 finished successfully!
+
+Verifying XDS/Rn/Tn propositions for random 1 000 000 input differences for n <= 30
+verifyTheory_random n=2 count=1000000 finished successfully!
+verifyTheory_random n=3 count=1000000 finished successfully!
+verifyTheory_random n=4 count=1000000 finished successfully!
+verifyTheory_random n=5 count=1000000 finished successfully!
+verifyTheory_random n=6 count=1000000 finished successfully!
+verifyTheory_random n=7 count=1000000 finished successfully!
+verifyTheory_random n=8 count=1000000 finished successfully!
+verifyTheory_random n=9 count=1000000 finished successfully!
+verifyTheory_random n=10 count=1000000 finished successfully!
+verifyTheory_random n=11 count=1000000 finished successfully!
+verifyTheory_random n=12 count=1000000 finished successfully!
+verifyTheory_random n=13 count=1000000 finished successfully!
+verifyTheory_random n=14 count=1000000 finished successfully!
+verifyTheory_random n=15 count=1000000 finished successfully!
+verifyTheory_random n=16 count=1000000 finished successfully!
+verifyTheory_random n=17 count=1000000 finished successfully!
+verifyTheory_random n=18 count=1000000 finished successfully!
+verifyTheory_random n=19 count=1000000 finished successfully!
+verifyTheory_random n=20 count=1000000 finished successfully!
+verifyTheory_random n=21 count=1000000 finished successfully!
+verifyTheory_random n=22 count=1000000 finished successfully!
+verifyTheory_random n=23 count=1000000 finished successfully!
+verifyTheory_random n=24 count=1000000 finished successfully!
+verifyTheory_random n=25 count=1000000 finished successfully!
+verifyTheory_random n=26 count=1000000 finished successfully!
+verifyTheory_random n=27 count=1000000 finished successfully!
+verifyTheory_random n=28 count=1000000 finished successfully!
+verifyTheory_random n=29 count=1000000 finished successfully!
+verifyTheory_random n=30 count=1000000 finished successfully!
+
+Verifying TnC formulas (Theorem 3) for random 1000 constants/differences for n <= 12
+verifyTnC_random n=2 count=1000 finished successfully!
+verifyTnC_random n=3 count=1000 finished successfully!
+verifyTnC_random n=4 count=1000 finished successfully!
+verifyTnC_random n=5 count=1000 finished successfully!
+verifyTnC_random n=6 count=1000 finished successfully!
+verifyTnC_random n=7 count=1000 finished successfully!
+verifyTnC_random n=8 count=1000 finished successfully!
+verifyTnC_random n=9 count=1000 finished successfully!
+verifyTnC_random n=10 count=1000 finished successfully!
+verifyTnC_random n=11 count=1000 finished successfully!
+verifyTnC_random n=12 count=1000 finished successfully!
+
+Verifying RXDP const formula exhaustively for n <= 8
+verifyRXDPconst_exhaustive n=2 k=1 finished successfully!
+verifyRXDPconst_exhaustive n=3 k=1 finished successfully!
+verifyRXDPconst_exhaustive n=3 k=2 finished successfully!
+verifyRXDPconst_exhaustive n=4 k=1 finished successfully!
+verifyRXDPconst_exhaustive n=4 k=2 finished successfully!
+verifyRXDPconst_exhaustive n=4 k=3 finished successfully!
+verifyRXDPconst_exhaustive n=5 k=1 finished successfully!
+verifyRXDPconst_exhaustive n=5 k=2 finished successfully!
+verifyRXDPconst_exhaustive n=5 k=3 finished successfully!
+verifyRXDPconst_exhaustive n=5 k=4 finished successfully!
+verifyRXDPconst_exhaustive n=6 k=1 finished successfully!
+verifyRXDPconst_exhaustive n=6 k=2 finished successfully!
+verifyRXDPconst_exhaustive n=6 k=3 finished successfully!
+verifyRXDPconst_exhaustive n=6 k=4 finished successfully!
+verifyRXDPconst_exhaustive n=6 k=5 finished successfully!
+verifyRXDPconst_exhaustive n=7 k=1 finished successfully!
+verifyRXDPconst_exhaustive n=7 k=2 finished successfully!
+verifyRXDPconst_exhaustive n=7 k=3 finished successfully!
+verifyRXDPconst_exhaustive n=7 k=4 finished successfully!
+verifyRXDPconst_exhaustive n=7 k=5 finished successfully!
+verifyRXDPconst_exhaustive n=7 k=6 finished successfully!
+verifyRXDPconst_exhaustive n=8 k=1 finished successfully!
+verifyRXDPconst_exhaustive n=8 k=2 finished successfully!
+verifyRXDPconst_exhaustive n=8 k=3 finished successfully!
+verifyRXDPconst_exhaustive n=8 k=4 finished successfully!
+verifyRXDPconst_exhaustive n=8 k=5 finished successfully!
+verifyRXDPconst_exhaustive n=8 k=6 finished successfully!
+verifyRXDPconst_exhaustive n=8 k=7 finished successfully!
+
+Verifying RXDP const formula for random 50 input differences for n <= 12
+verifyRXDPconst_random n=2 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=3 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=3 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=4 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=4 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=4 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=5 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=5 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=5 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=5 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=6 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=6 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=6 k=5 count=100 finished successfully!
+verifyRXDPconst_random n=6 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=6 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=7 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=7 k=5 count=100 finished successfully!
+verifyRXDPconst_random n=7 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=7 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=7 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=7 k=6 count=100 finished successfully!
+verifyRXDPconst_random n=8 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=8 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=8 k=5 count=100 finished successfully!
+verifyRXDPconst_random n=8 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=8 k=6 count=100 finished successfully!
+verifyRXDPconst_random n=8 k=7 count=100 finished successfully!
+verifyRXDPconst_random n=8 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=5 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=6 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=7 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=9 k=8 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=5 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=6 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=7 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=8 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=9 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=10 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=6 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=5 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=7 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=8 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=9 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=10 count=100 finished successfully!
+verifyRXDPconst_random n=11 k=2 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=5 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=7 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=8 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=6 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=9 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=3 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=4 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=10 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=11 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=1 count=100 finished successfully!
+verifyRXDPconst_random n=12 k=2 count=100 finished successfully!
+
