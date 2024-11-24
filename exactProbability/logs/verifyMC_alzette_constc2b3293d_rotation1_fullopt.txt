@@ -1,0 +1,27 @@
+===========================
+MORE CONSTANTS TESTING
+===========================
+Testing Alzette_c2b3293d_k1_nr4, using 2^42 data, seeds 0000000000000123 0000000000000456
+Trail (state words):
+  0041fbe0 0021ffe0 
+  47d480a6 01da1fe0 
+  8011f880 40397c02 
+  87ce07c0 c00f850f 
+  c0107cc7 c78e02ca 
+Found match #1 c2386419:034a9e87 (follows trail? 1)
+Found match #2 a690bc49:043f4a14 (follows trail? 1)
+Found match #3 a88a04d7:885d8e05 (follows trail? 1)
+Found match #4 89756682:a4c2802c (follows trail? 1)
+Found match #5 8c6179d1:99a5a77e (follows trail? 1)
+Found match #6 e4fceeca:09e86a89 (follows trail? 1)
+Found match #7 05e1868c:e10d8a06 (follows trail? 1)
+Found match #8 c9356591:8c886bdb (follows trail? 1)
+Found match #9 44470e2d:92f2e655 (follows trail? 1)
+Found match #10 0a6f367a:c220d074 (follows trail? 1)
+Found match #11 25da63bf:e1115414 (follows trail? 1)
+Found match #12 0693bccb:6a5b47d4 (follows trail? 1)
+Found match #13 95d84910:131e87bf (follows trail? 1)
+Found match #14 0bb2b489:65c87e18 (follows trail? 1)
+Alzette_c2b3293d_k1_nr4: 14/4398046511104 = 2^-38.19 experimental differential probability
+Alzette_c2b3293d_k1_nr4: 14/14/4398046511104 = 2^-38.19 experimental trail probability
+

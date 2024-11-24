@@ -1,0 +1,37 @@
+===========================
+MORE CONSTANTS TESTING
+===========================
+Testing Alzette_b7e15162_k15_nr4, using 2^42 data, seeds 0000000000000123 0000000000000456
+Trail (state words):
+  9fd00c0e dff00e1f 
+  0080029c 0ff80000 
+  1fd00842 0e900040 
+  10100290 10101044 
+  1f504c12 56901044 
+Found match #1 908b73e5:31e55c37 (follows trail? 1)
+Found match #2 54c99870:105b57ef (follows trail? 1)
+Found match #3 713d0183:b197e856 (follows trail? 1)
+Found match #4 0527754f:121d934a (follows trail? 1)
+Found match #5 4eb85be7:cce1e77b (follows trail? 1)
+Found match #6 16dee170:89dbd5aa (follows trail? 1)
+Found match #7 c5a191f6:1ae55c70 (follows trail? 1)
+Found match #8 031f94f2:f11ba468 (follows trail? 1)
+Found match #9 3d2d029c:2623edce (follows trail? 1)
+Found match #10 56ec5da9:2b59e279 (follows trail? 1)
+Found match #11 99f88da1:27e1f0b2 (follows trail? 1)
+Found match #12 bdb1a209:84e5a191 (follows trail? 1)
+Found match #13 6e975c8b:b45ba795 (follows trail? 1)
+Found match #14 716e4008:909fe556 (follows trail? 1)
+Found match #15 d88dd950:8f5d2d49 (follows trail? 1)
+Found match #16 9ed261bd:855dea22 (follows trail? 1)
+Found match #17 8e658449:179df399 (follows trail? 1)
+Found match #18 48bfa7a1:cfdfdd71 (follows trail? 1)
+Found match #19 3c8fbdf2:0e598cf1 (follows trail? 1)
+Found match #20 96abf13f:8861cb6e (follows trail? 1)
+Found match #21 01d9d88c:d9e1ecd8 (follows trail? 1)
+Found match #22 bc5b54c7:0793d991 (follows trail? 1)
+Found match #23 2276fce3:121fc932 (follows trail? 1)
+Found match #24 35df128d:13d1f3ca (follows trail? 1)
+Alzette_b7e15162_k15_nr4: 24/4398046511104 = 2^-37.42 experimental differential probability
+Alzette_b7e15162_k15_nr4: 24/24/4398046511104 = 2^-37.42 experimental trail probability
+
