@@ -1,0 +1,15 @@
+Alzette_bf715880_k10_nr4
+32 10 2 0
+30 -37.994370
+5
+ffc1fbfd bdf0fcff 
+01f0ab80 5e010184 
+fae119fd 7fc141fd 
+00f30182 8a01f603 
+7af05b75 8b09f6e0 
+0
+4
+ffc1fbfd 7be1f9ff 7be3f1fd 
+01f0ab80 80c22f00 80f24380 
+fae119fd 7fc141fd 7ae05bff 
+00f30182 01f6038a 00e30108 
