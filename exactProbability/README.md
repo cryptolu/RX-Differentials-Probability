@@ -83,6 +83,10 @@ Alzette_b7e15162_k1_nr4: 107/4398046511104 = 2^-35.26 experimental differential 
 Alzette_b7e15162_k1_nr4: 107/107/4398046511104 = 2^-35.26 experimental trail probability
 ```
 
+## Alzette CASCADA implementation for k=1
+
+[CASCADA_Alzette.py](./CASCADA_Alzette.py) contains implementation of Alzette in the CASCADA framework (search of "optimal" RX-trails for k=1), execution result is in [CASCADA_Alzette.log](./CASCADA_Alzette.log).
+
 
 ## Verify Add-Constant formula
 
