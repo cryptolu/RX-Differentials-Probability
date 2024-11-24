@@ -1,0 +1,16 @@
+python3 verify_theory.py
+Random 1000 samples for each 3 <= n <= 32 (exhaustive check for n <= 12)
++ 1000 samples with forced dz
+n = 3
+Hit cases: agree 754 disagree 1003
+n = 4
+Hit cases: agree 881 disagree 757
+n = 5
+Hit cases: agree 900 disagree 659
+n = 6
+Hit cases: agree 908 disagree 556
+n = 7
+Hit cases: agree 851 disagree 513
+n = 8
+Hit cases: agree 825 disagree 507
+n = 9

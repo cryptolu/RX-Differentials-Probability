@@ -1,0 +1,14 @@
+gcc Verify-thm-1.c -lm -O3 -o verify-thm-1
+./verify-thm-1
+Transition with incorrect probability (factor x2, example in the paper)
+counter0: 16384 14.000000
+
+echo
+
+gcc Verify-thm-1.c -lm -O3 -DMISMATCH -o verify-thm-1-mismatch
+./verify-thm-1-mismatch
+Transition with incorrect fractional part (not .0 or .415)
+counter0: 1523712 20.539159
+
+echo
+
