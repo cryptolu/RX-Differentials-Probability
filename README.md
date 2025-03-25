@@ -6,7 +6,7 @@ This repository contains supporting code for the [paper](https://tosc.iacr.org/i
 
 from ToSC 2025 (1), by Alex Biryukov, Baptiste Lambin and Aleksei Udovenko.
 
-See also [slides] from the presentation.
+See also [slides](./slides.pdf) from the presentation.
 
 ## Setup
 
