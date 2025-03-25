@@ -1,0 +1,26 @@
+===========================
+Normal rounds testing
+===========================
+Testing Alzette_b7e15162_k8_nr4, using 2^42 data, seeds 0000000000000123 0000000000000456
+Trail (state words):
+  140038e8 4f203c76 
+  e0f00329 0f10c0c0 
+  16c03074 0ec060f8 
+  413003a9 21c00000 
+  d780305d 22488130 
+Found match #1 a5272229:b9386a56 (... follows trail? 1)
+Found match #2 fdaa8154:069940e8 (... follows trail? 1)
+Found match #3 c92ee579:bfd0590d (... follows trail? 1)
+Found match #4 b498f659:26aff0a6 (... follows trail? 1)
+Found match #5 f20dee4f:31c589a5 (... follows trail? 1)
+Found match #6 549a7b34:56a22a53 (... follows trail? 1)
+Found match #7 6a4d7e39:cd258ecc (... follows trail? 1)
+Found match #8 9b2179d5:63504633 (... follows trail? 1)
+Found match #9 93c9fb84:d682e5b8 (... follows trail? 1)
+Found match #10 831c8631:5cefc098 (... follows trail? 1)
+Found match #11 8246894c:6b0d38e6 (... follows trail? 1)
+Found match #12 4695fb77:eea66793 (... follows trail? 1)
+Found match #13 245215e6:feaaeba8 (... follows trail? 1)
+Alzette_b7e15162_k8_nr4: 13/4398046511104 = 2^-38.30 experimental differential probability
+Alzette_b7e15162_k8_nr4: 13/13/4398046511104 = 2^-38.30 experimental trail probability
+

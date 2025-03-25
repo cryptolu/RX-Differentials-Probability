@@ -1,0 +1,227 @@
+echo Verifying up to n=8
+Verifying up to n=8
+# note: can replace pypy3 with python3 but it is 30x slower
+pypy3 verify_theory.py 8
+Random 1000 samples for each 3 <= n <= 32 (exhaustive check for n <= 12)
++ 1000 samples with forced dz
+n = 3
+Hit cases: agree 733 disagree 1030
+n = 4
+Hit cases: agree 858 disagree 735
+n = 5
+Hit cases: agree 926 disagree 619
+n = 6
+Hit cases: agree 882 disagree 551
+n = 7
+Hit cases: agree 911 disagree 487
+n = 8
+Hit cases: agree 847 disagree 484
+n = 9
+Hit cases: agree 755 disagree 500
+n = 10
+Hit cases: agree 704 disagree 516
+n = 11
+Hit cases: agree 681 disagree 489
+n = 12
+Hit cases: agree 637 disagree 497
+n = 13
+Hit cases: agree 611 disagree 488
+n = 14
+Hit cases: agree 592 disagree 488
+n = 15
+Hit cases: agree 611 disagree 479
+n = 16
+Hit cases: agree 551 disagree 511
+n = 17
+Hit cases: agree 540 disagree 500
+n = 18
+Hit cases: agree 499 disagree 484
+n = 19
+Hit cases: agree 518 disagree 470
+n = 20
+Hit cases: agree 475 disagree 513
+n = 21
+Hit cases: agree 442 disagree 517
+n = 22
+Hit cases: agree 447 disagree 508
+n = 23
+Hit cases: agree 432 disagree 494
+n = 24
+Hit cases: agree 439 disagree 477
+n = 25
+Hit cases: agree 412 disagree 501
+n = 26
+Hit cases: agree 415 disagree 509
+n = 27
+Hit cases: agree 444 disagree 468
+n = 28
+Hit cases: agree 414 disagree 482
+n = 29
+Hit cases: agree 379 disagree 537
+n = 30
+Hit cases: agree 412 disagree 486
+n = 31
+Hit cases: agree 414 disagree 480
+n = 32
+Hit cases: agree 381 disagree 476
+Done!
+
+Verifying Example 1. (Incorrect [AL16] value, correction 1/2)
+count our 16384
+count [AL16] 32768
+Exhaustive computation... this may take time (10 sec on pypy3)
+count experimental 16384
+Done!
+
+Random transitions of the shape given by Proposition 6 (correction cases)
+1000 samples for each 3 <= n <= 32 (exhaustive check for n <= 12)
+n = 3
+n = 4
+n = 5
+n = 6
+n = 7
+n = 8
+n = 9
+n = 10
+n = 11
+n = 12
+n = 13
+n = 14
+n = 15
+n = 16
+n = 17
+n = 18
+n = 19
+n = 20
+n = 21
+n = 22
+n = 23
+n = 24
+n = 25
+n = 26
+n = 27
+n = 28
+n = 29
+n = 30
+n = 31
+n = 32
+Done!
+
+Counting valid transitions
+n = 2 k = 1
+c0 c1 [16, 48] sum 64
+n = 3 k = 1
+c0 c1 [112, 336] sum 448
+n = 3 k = 2
+c0 c1 [112, 336] sum 448
+n = 4 k = 1
+c0 c1 [784, 2352] sum 3136
+n = 4 k = 2
+c0 c1 [784, 2352] sum 3136
+n = 4 k = 3
+c0 c1 [784, 2352] sum 3136
+n = 5 k = 1
+c0 c1 [5488, 16464] sum 21952
+n = 5 k = 2
+c0 c1 [5488, 16464] sum 21952
+n = 5 k = 3
+c0 c1 [5488, 16464] sum 21952
+n = 5 k = 4
+c0 c1 [5488, 16464] sum 21952
+n = 6 k = 1
+c0 c1 [38416, 115248] sum 153664
+n = 6 k = 2
+c0 c1 [38416, 115248] sum 153664
+n = 6 k = 3
+c0 c1 [38416, 115248] sum 153664
+n = 6 k = 4
+c0 c1 [38416, 115248] sum 153664
+n = 6 k = 5
+c0 c1 [38416, 115248] sum 153664
+n = 7 k = 1
+c0 c1 [268912, 806736] sum 1075648
+n = 7 k = 2
+c0 c1 [268912, 806736] sum 1075648
+n = 7 k = 3
+c0 c1 [268912, 806736] sum 1075648
+n = 7 k = 4
+c0 c1 [268912, 806736] sum 1075648
+n = 7 k = 5
+c0 c1 [268912, 806736] sum 1075648
+n = 7 k = 6
+c0 c1 [268912, 806736] sum 1075648
+n = 8 k = 1
+c0 c1 [1882384, 5647152] sum 7529536
+n = 8 k = 2
+c0 c1 [1882384, 5647152] sum 7529536
+n = 8 k = 3
+c0 c1 [1882384, 5647152] sum 7529536
+n = 8 k = 4
+c0 c1 [1882384, 5647152] sum 7529536
+n = 8 k = 5
+c0 c1 [1882384, 5647152] sum 7529536
+n = 8 k = 6
+c0 c1 [1882384, 5647152] sum 7529536
+n = 8 k = 7
+c0 c1 [1882384, 5647152] sum 7529536
+Done!
+
+(Corollary 2) Computing average probability (exhaustive)
+n = 2 k = 1
+    average 1/4 expected 1/4
+n = 3 k = 1
+    average 1/7 expected 1/7
+n = 3 k = 2
+    average 1/7 expected 1/7
+n = 4 k = 1
+    average 4/49 expected 4/49
+n = 4 k = 2
+    average 4/49 expected 4/49
+n = 4 k = 3
+    average 4/49 expected 4/49
+n = 5 k = 1
+    average 16/343 expected 16/343
+n = 5 k = 2
+    average 16/343 expected 16/343
+n = 5 k = 3
+    average 16/343 expected 16/343
+n = 5 k = 4
+    average 16/343 expected 16/343
+n = 6 k = 1
+    average 64/2401 expected 64/2401
+n = 6 k = 2
+    average 64/2401 expected 64/2401
+n = 6 k = 3
+    average 64/2401 expected 64/2401
+n = 6 k = 4
+    average 64/2401 expected 64/2401
+n = 6 k = 5
+    average 64/2401 expected 64/2401
+n = 7 k = 1
+    average 256/16807 expected 256/16807
+n = 7 k = 2
+    average 256/16807 expected 256/16807
+n = 7 k = 3
+    average 256/16807 expected 256/16807
+n = 7 k = 4
+    average 256/16807 expected 256/16807
+n = 7 k = 5
+    average 256/16807 expected 256/16807
+n = 7 k = 6
+    average 256/16807 expected 256/16807
+n = 8 k = 1
+    average 1024/117649 expected 1024/117649
+n = 8 k = 2
+    average 1024/117649 expected 1024/117649
+n = 8 k = 3
+    average 1024/117649 expected 1024/117649
+n = 8 k = 4
+    average 1024/117649 expected 1024/117649
+n = 8 k = 5
+    average 1024/117649 expected 1024/117649
+n = 8 k = 6
+    average 1024/117649 expected 1024/117649
+n = 8 k = 7
+    average 1024/117649 expected 1024/117649
+Done!
+

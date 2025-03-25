@@ -1,0 +1,9 @@
+Transition with incorrect probability (factor x2, example in the paper)
+counter0: 16384
+
+16384 = 2^14 vs 2^15 (2^32 * 2^-17 prob.) claimed by previous theorem
+
+Transition with incorrect fractional part (not .0 or .415)
+counter0: 1523712
+
+1523712 = 2^20.53915881110803 impossible by previous theorem

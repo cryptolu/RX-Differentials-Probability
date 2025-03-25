@@ -323,6 +323,17 @@ def main():
             pr("    (0x%08x, 0x%08x)," % (cl, cr))
         pr("]")
         pr()
+
+        pr("const uint32_t differential_trail_Malzette1[] = {")
+        for _, _, (a, b, c) in diffs0:
+            pr("    0x%08x," % c)
+        pr("};")
+        pr("const uint32_t differential_trail_Malzette2[] = {")
+        for _, _, (a, b, c) in diffs1:
+            pr("    0x%08x," % c)
+        pr("};")
+        pr()
+
         for cl, cr in (diff_in0, diff_out0, diff_in1, diff_out1):
             pr("%08x:%08x" % (cl, cr))
 

@@ -1,0 +1,15 @@
+Alzette_c2b3293d_k7_nr4
+32 7 2 0
+34 -41.988773
+5
+0fdfffbc 05ffbffc 
+80fbc860 d98003e7 
+1bd86bbc 37b04398 
+80ff6800 0001fc20 
+1bd8bfdc 08017cdf 
+0
+4
+0fdfffbc 0bff7ff8 1bdc7fbc 
+80fbc860 01f3ecc0 80ffdc60 
+1bd86bbc 37b04398 1bd8dfdc 
+80ff6800 01fc2000 80ff0800 

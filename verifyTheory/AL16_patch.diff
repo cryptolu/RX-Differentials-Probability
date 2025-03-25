@@ -1,0 +1,21 @@
+35,37c35
+< 	int b1 = 244;
+< 	int a2 = 8;
+< 	int b2 = 80;
+---
+> 	int b1 = 0;
+39c37,48
+< 	int Delta2 = 4232;
+---
+> 	#ifdef MISMATCH
+>         printf("Transition with incorrect fractional part (not .0 or .415)\n");
+>         int a2 = LCS(0x2556, 7);
+>         int b2 = 0x0b21;
+>         int Delta2 = 0x2e76;
+>     #else
+>         printf("Transition with incorrect probability (factor x2, example in the paper)\n");
+>         int a2 = LCS(0xe013, 7);
+>         int b2 = 0x13a1;
+>         int Delta2 = 0x0c4d;
+>     #endif
+> 
